@@ -1,0 +1,268 @@
+body {over2-x: hidden;}
+* {
+  box-sizing: border-box;
+  
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("image/design.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .bg-img {
+   background-size: fill;
+  }
+}
+
+.dar{
+  font-size: 3em;
+  padding-top: 250px;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+/*@media screen and (max-width: 500px) {
+  .bg-img {
+   margin-left: -200px;
+  }
+}*/
+
+
+/* Position the navbar container inside the image */
+.container {
+  /*position: absolute;*/
+  /*margin: 20px;*/
+  /*width: 100%;*/
+   width: 90%
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+nav{
+    height: 6rem;
+    width: 100%;
+    background-color: #1314182e;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    
+
+}
+
+/*Styling logo*/
+.logo{
+    padding:1vh 1vw;
+    text-align: center;
+}
+.logo img {
+    height: 6rem;
+    width: 7rem;
+}
+
+/*Styling Links*/
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+    color: #f2f5f7;
+}
+.nav-links li a:hover {
+    color: #82413F;
+    font-weight: bold;
+}
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a:hover::before{
+    width: 100%;
+}
+
+/*Styling Buttons*/
+
+.join-button{
+    color: #F2F2F2;
+    background-color: #82413F;
+    border: 1.5px solid #82413F;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.join-button:hover {
+    color: #f2f5f7;
+    background-color: transparent;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+
+/*Stying for small screens*/
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1314182e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #f2f2f2;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #1314182e;
+  color: #61d9ff;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  /*font-family: inherit;*/
+  margin: 0;
+}
+
+
+
+.column {
+  float: left;
+  width: 18%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+  margin-left: 9.5%;
+  margin-top: 3%;
+  border: 7px solid #00c2ff;;
+  border-radius: 12px;
+}
+
+.column2 {
+  float: left;
+  width: 18%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+  margin-left: 3%;
+  margin-top: 3%;
+  border: 7px solid #00c2ff;;
+  border-radius: 12px;
+}
+
+.column3 {
+  float: left;
+  width: 18%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+  margin-left: 3%;
+  margin-top: 3%;
+  border: 7px solid #00c2ff;;
+  border-radius: 12px;
+}
+
+.column4 {
+  float: left;
+  width: 18%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+  margin-left: 3%;
+  margin-top: 3%;
+  border: 7px solid #00c2ff;;
+  border-radius: 12px;
+}
+/* Clear floats after the columns */
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+
+/*.tick{
+    color: #00c2ff;
+}*/
+
+
+
+@media screen and (max-width: 900px) {
+  .nav-links li a {
+font-size: 1px;
+  }
+}
+
+
+@media screen and (max-width: 733px) {
+.dropdown .dropbtn{
+ padding-left: 0px;
+padding-right: 0px;
+}
+}
+
+@media screen and (max-width: 656px) {
+  .nav-links li a {
+font-size: 0.5px;
+  }
+}
