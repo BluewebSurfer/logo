@@ -196,7 +196,9 @@ nav{
   margin-top: 3%;
   border: 7px solid #00c2ff;;
   border-radius: 12px;
+  background-color:hsla(0,0%,100%,.781);
 }
+
 
 .column2 {
   float: left;
@@ -207,6 +209,7 @@ nav{
   margin-top: 3%;
   border: 7px solid #00c2ff;;
   border-radius: 12px;
+  background-color:hsla(0,0%,100%,.781);
 }
 
 .column3 {
@@ -218,6 +221,7 @@ nav{
   margin-top: 3%;
   border: 7px solid #00c2ff;;
   border-radius: 12px;
+  background-color:hsla(0,0%,100%,.781);
 }
 
 .column4 {
@@ -229,6 +233,7 @@ nav{
   margin-top: 3%;
   border: 7px solid #00c2ff;;
   border-radius: 12px;
+  background-color:hsla(0,0%,100%,.781);
 }
 /* Clear floats after the columns */
 
@@ -264,5 +269,33 @@ padding-right: 0px;
 @media screen and (max-width: 656px) {
   .nav-links li a {
 font-size: 0.5px;
+  }
+}
+
+
+@media screen and (min-width: 450px) {
+.column {
+width: 80%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+.column2 {
+width: 80%;
+margin-left: 9.5%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+.column3 {
+width: 80%;
+margin-left: 9.5%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+.column4 {
+width: 80%;
+margin-left: 9.5%;
   }
 }
